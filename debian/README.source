@@ -1,0 +1,25 @@
+Information about libjgoodies-common-java
+-----------------------------------------
+
+The 1.4.0 version of this package was debianized using the 
+mh_make command from the maven-debian-helper package.
+
+The build system uses Maven but prevents it from downloading
+anything from the Internet, making the build compliant with
+the Debian policy.
+
+The original upstream source distribution has been repacked
+as it contains binary JAR files.  The following modifications
+were made to the upstream source distribution:
+
+The sources were extracted with:
+
+unzip -d src/main/java jgoodies-common-1.4.0-sources.jar
+unzip -d src/test/java jgoodies-common-1.4.0-tests.jar
+
+Then these files were deleted:
+
+jgoodies-common-1.4.0.jar
+jgoodies-common-1.4.0-javadoc.jar
+jgoodies-common-1.4.0-sources.jar
+jgoodies-common-1.4.0-tests.jar

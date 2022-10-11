@@ -1,0 +1,4 @@
+version=3
+
+opts="uversionmangle=s/_/./g" \
+	http://www.jgoodies.com/downloads/libraries/ .*/jgoodies-common-(\d.*)\.(?:tgz|tbz2|txz|tar\.(?:gz|bz2|xz)|zip)$

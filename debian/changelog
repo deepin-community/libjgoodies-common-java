@@ -1,0 +1,111 @@
+libjgoodies-common-java (1.8.1-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 01:24:48 +0100
+
+libjgoodies-common-java (1.8.1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- tony mancill <tmancill@debian.org>  Fri, 25 Nov 2016 10:19:43 -0800
+
+libjgoodies-common-java (1.8.1-1) experimental; urgency=medium
+
+  * New upstream release. (Closes: #819668)
+  * Update debian/copyright to document use of maven.org for sources.
+
+ -- tony mancill <tmancill@debian.org>  Sun, 30 Oct 2016 11:06:34 -0700
+
+libjgoodies-common-java (1.7.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Use --no-parent in poms file to ignore parent pom.
+    Drop unnecessary build.patch.
+  * Update Vcs URLs in debian/control to be secure.
+  * Bump Standards-Version to 3.9.8.
+
+ -- tony mancill <tmancill@debian.org>  Sun, 31 Jul 2016 20:43:50 -0700
+
+libjgoodies-common-java (1.7.0-1) experimental; urgency=medium
+
+  [ tony mancill ]
+  * New upstream version. (Closes: #812558)
+  * Use DH 9.
+  * Add build patch to disable parent in upstream pom.
+  * Bump Standards-Version to 3.9.6.
+  * Switch from cdbs to dh+javahelper.
+
+  [ gregor herrmann ]
+  * Use nicer URL for Vcs-Browser.
+  * Update regexp in debian/watch.
+
+ -- tony mancill <tmancill@debian.org>  Thu, 28 Jan 2016 20:30:05 -0800
+
+libjgoodies-common-java (1.4.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Install RELEASE-NOTES.txt again as upstream changelog.
+  * Use canonical URLs for Vcs-* fields in debian/control.
+  * Re-enable test suite.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 05 May 2013 20:41:50 +0200
+
+libjgoodies-common-java (1.4.0-1) experimental; urgency=low
+
+  [ gregor herrmann ]
+  * Update upstream URL in debian/watch and debian/control.
+
+  [ tony mancill ]
+  * New upstream release.
+  * Switch from ant to maven-based build.
+  * Bump Standards-Version to 3.9.4 (no changes necessary).
+  * Add xvfb to build-deps
+
+ -- tony mancill <tmancill@debian.org>  Mon, 19 Nov 2012 20:04:02 -0800
+
+libjgoodies-common-java (1.3.0-2) unstable; urgency=low
+
+  [ tony mancill ]
+  * Switch to Debian Java Team maintenance.
+  * Bump Standards-Version to 3.9.3 (no changes necessary).
+  * Update machine-readable field names in d/copyright.
+
+  [ gregor herrmann ]
+  * Split out API documentation into new -doc packages. Thanks to
+    Sylvestre Ledru for the bug report. (Closes: #665304)
+
+ -- tony mancill <tmancill@debian.org>  Fri, 20 Apr 2012 21:57:20 -0700
+
+libjgoodies-common-java (1.3.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Vcs-* headers.
+  * Update years of upstream and packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Feb 2012 20:35:09 +0100
+
+libjgoodies-common-java (1.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Refresh javadoc.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 10 Aug 2011 18:57:00 +0200
+
+libjgoodies-common-java (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Set Standards-Version to 3.9.2 (no changes).
+  * Bump debhelper compatibility level to 8.
+  * debian/copyright: bump years of upstream and packaging copyright.
+  * Register API docs with docbase system.
+  * debian/control: remove dependency on JRE (thanks, lintian).
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 18 Apr 2011 20:54:50 +0200
+
+libjgoodies-common-java (1.1.1-1) unstable; urgency=low
+
+  * Initial release (closes: #607675).
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 21 Dec 2010 13:25:35 +0100

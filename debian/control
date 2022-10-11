@@ -1,0 +1,42 @@
+Source: libjgoodies-common-java
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           tony mancill <tmancill@debian.org>
+Section: java
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               default-jdk,
+               javahelper,
+               maven-debian-helper (>= 1.5),
+               xauth,
+               xvfb
+Build-Depends-Indep: junit4,
+                     default-jdk-doc,
+                     libmaven-javadoc-plugin-java
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-java/libjgoodies-common-java.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-java/libjgoodies-common-java.git
+Homepage: http://www.jgoodies.com/downloads/libraries/
+
+Package: libjgoodies-common-java
+Architecture: all
+Depends: ${misc:Depends},
+         ${maven:Depends}
+Recommends: ${maven:OptionalDepends}
+Suggests: libjgoodies-common-java-doc
+Description: JGoodies Common
+ The JGoodies Common library provides convenience code for other JGoodies
+ libraries and applications.
+
+Package: libjgoodies-common-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Breaks: libjgoodies-common-java (<< 1.3.0-2)
+Replaces: libjgoodies-common-java (<< 1.3.0-2)
+Description: JGoodies Common library (documentation)
+ The JGoodies Common library provides convenience code for other JGoodies
+ libraries and applications.
+ .
+ This package contains the API documentation of libjgoodies-common-java.
+
